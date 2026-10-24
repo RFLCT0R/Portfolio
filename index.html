@@ -138,12 +138,8 @@
     .highlight { color: var(--navy); font-weight: 800; }
     .about-points { padding: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; background: #F5F8FC; }
     .point { padding: 18px; min-height: 144px; border: 1px solid var(--line); border-radius: 16px; background: var(--white); }
-    .point-icon {  width: 36px; height: 36px; border-radius: 11px; display: grid; place-items: center; color: var(--blue); background: var(--blue-pale); margin-bottom: 14px; }
-    .point-icon svg {
-      width: 28px;
-      height: 28px;
-      transform: translateY(15%);  /* adjust % until visually centered */
-    }    
+    .point-icon {  flex: 0 0 auto; width: 36px; height: 36px; border-radius: 11px; place-items: center; color: var(--blue); background: var(--blue-pale); margin-bottom: 14px; position: relative; display: flex; align-items: center; justify-content: center; }
+    .point-icon svg { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 22px; height: 22px; display: block; }
     .point strong { display: block; color: var(--navy); font-size: .83rem; margin-bottom: 4px; }
     .point span { color: #718097; font-size: .72rem; line-height: 1.5; display: block; }
 
